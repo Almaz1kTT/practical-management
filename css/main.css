@@ -51,7 +51,23 @@ img {
   width: 100%;
   padding: 0 20px;
 }
+/* ---------------------------------------------- */
+/* задній фон  */
+.background {
+  background-image: url(/practical-management/image/fon.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  min-height: 100vh;
+  background-attachment: scroll;
+  padding-top: 32px;
+}
+/* ----------------------------------------------- */
 /* header */
+.header {
+  position: sticky;
+  top: 0;
+}
 .header-main {
   height: 48px;
   display: flex;
@@ -67,6 +83,11 @@ img {
   font-size: 20px;
   letter-spacing: -0.03em;
   color: #1b414b;
+  text-shadow: 1px 1px 4px black;
+}
+.logo:hover {
+  text-shadow: unset;
+  transform: translate(1px, 1px);
 }
 /* навігація */
 .header-navigations {
@@ -94,10 +115,29 @@ img {
 .navigation-link:hover {
   background: #1b414b;
   font-weight: 600;
+  transform: scaleX(1.06);
 }
 
 /* силки на соц мережі */
 .header-link-social {
   display: flex;
   gap: 11px;
+}
+
+/* ----------------------------------------------- */
+/* секція №1 */
+.section-one-title {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+}
+.section-one-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: rgba(251, 251, 251, 0.7);
 }
